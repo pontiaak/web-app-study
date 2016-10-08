@@ -11,9 +11,9 @@
 body {
     padding: 0;
     margin: 0;
-    color: #fff;
+    color: #9370DB;
     font-size: 15px;
-    background-image: url(images/best_place.jpg);
+    background-image: url(image/best_place.jpg);
     background-size: cover;
     font-family: playfair;
 }
@@ -57,27 +57,38 @@ h1, h2, h3,h4, h5 {
 .main nav a {
     text-transform: capitalize;
     text-decoration: none;
-    color:yellow;
+    color:red;
     padding-left: 30px;
     padding-right: 30px;
 }
 
 .main nav a:hover {
-    text-decoration: underline;
+    text-decoration: azure;
 }
 
 .main nav a.nav--active {
-    color: #fff;
-    text-decoration: none;
+    color: #ADFF2F;
+    text-decoration: navy;
     pointer-events: none; 
 }
 
 .animation-appear {
   animation-name: appearIn;
-  animation-duration: 3s;
+  animation-duration: 10s;
 }
 
 @keyframes appearIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    0% {  color: #ADFF2F;left:0px; top:0px;}
+    10% {  color: #FF00FF;left:100px; top:200px;}
+    20% {  color: #EE82EE;left:200px; top:300px;}
+    30% {  color: #DDA0DD;left:300px; top:400px;}
+    40% {   color: #DA70D6;left:200px; top:300px;}
+    50% {   color: #BA55D3;left:100px; top:200px;}
+    60% {  color: #9932CC;left:0px; top:0px;}
+    70% {  color: #9400D3;left:100px; top:200px;}
+    80% {  color: #8A2BE2;left:200px; top:300px;}
+    90% {  color: #A020F0;left:300px; top:400px;}
+    
+    100% {  color: #9370DB;left:200px; top:300px;}
+   
 }
